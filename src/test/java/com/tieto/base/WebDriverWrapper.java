@@ -29,6 +29,7 @@ public class WebDriverWrapper {
 		if (sBrowser.toLowerCase().equals("ch"))
 		{
 			driver = new ChromeDriver();
+			
 		}
 		else if (sBrowser.toLowerCase().equals("ff"))
 		{
@@ -40,7 +41,7 @@ public class WebDriverWrapper {
          
 		String url=PropUtils.getValueFromKey("testdata/data.properties", "url");
 		
-		driver.get("https://demo.openemr.io/openemr/interface/login/login.php?site=default");
+		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		

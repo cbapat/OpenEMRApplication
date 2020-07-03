@@ -90,6 +90,7 @@ public class LoginTest extends WebDriverWrapper {
 		lObj.enterUserName( uname);
 		lObj.enterPassword( pass);
 		//driver.findElement(By.id("authUser")).sendKeys("admin");
+		
 		//driver.findElement(By.id("clearPass")).sendKeys("pass");
 		
 		
@@ -97,6 +98,8 @@ public class LoginTest extends WebDriverWrapper {
 		lObj.clickLogin();
 		
 		DashboardPage dPage= new DashboardPage(driver);
+		
+		
 		
 		
 		
